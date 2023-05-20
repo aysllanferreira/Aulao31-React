@@ -5,12 +5,12 @@ export default class LoadingCard extends Component {
   render() {
     return (
       <div className="LoadingCard">
-        <div className="LoadingCard__image" />
-        <div className="LoadingCard__text" />
-        <div className="LoadingCard__text" />
-        <div className="LoadingCard__text" />
-        <div className="LoadingCard__text" />
-        <div className="LoadingCard__text" />
+        <div className="loading__image" />
+        <div className="loading__text" />
+        <div className="loading__text" />
+        <div className="loading__text" />
+        <div className="loading__text" />
+        <div className="loading__text" />
       </div>
     );
   }
