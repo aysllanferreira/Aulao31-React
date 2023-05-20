@@ -1,0 +1,36 @@
+.Header{
+  padding: 20px 0px;
+  text-align: center;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+
+  &__title{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 2.5rem;
+    color: #ff1f1f;
+  }
+
+  &__img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+
+    // Animation pulse
+    animation: pulse 1s infinite;
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  }
+}

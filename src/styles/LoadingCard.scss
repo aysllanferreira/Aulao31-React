@@ -1,0 +1,39 @@
+@keyframes loading {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: -100% 50%;
+  }
+}
+
+.LoadingCard {
+  border: none;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  padding: 10px;
+  width: 300px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .loading__image,
+  .loading__text {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1s infinite;
+  }
+
+  .loading__image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .loading__text {
+    width: 80%;
+    height: 20px;
+    margin: 10px 0;
+  }
+}
